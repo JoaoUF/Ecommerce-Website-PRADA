@@ -1,0 +1,24 @@
+body{
+    background-color: gray;
+}
+.top-bar{
+    width: 100vw;
+    height: 8.20vh;
+    background-color: white;
+    display: inline-block;
+}
+.top-bar__logo-space{
+    width: 15vw;
+    margin: 0%;
+}
+.top-bar__menu{
+    width: 45vw;
+    list-style-type: none;
+    display: inline;
+}
+.top-bar__search{
+    width: 20vw;
+}
+.top-bar__personal{
+    width: 20vw;
+}
