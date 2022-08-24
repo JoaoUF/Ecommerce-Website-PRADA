@@ -1,3 +1,17 @@
+@font-face {
+    font-family: Libre Baskerville;
+    src: url(../fonts/LibreBaskerville-Regular.otf);
+}
+:root{
+    /* FONT-FAMILIES */ 
+    --font_family_01: Libre Baskerville;
+    
+    /* FONT-SIZE */
+    --font__size_01: clamp(0.9rem, 1.125rem, 1.25rem);
+
+    /* FONT-COLOR */
+    --font__color_01: #272727;
+}
 body{
     background-color: gray;
 }
@@ -5,20 +19,53 @@ body{
     width: 100vw;
     height: 8.20vh;
     background-color: white;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
 }
 .top-bar__logo-space{
     width: 15vw;
     margin: 0%;
+    display: flex;
+    justify-content: start;
 }
 .top-bar__menu{
-    width: 45vw;
+    width: 40vw;
+    margin: 0%;
+    padding: 0%;
     list-style-type: none;
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    gap: 2.1vw;
+    justify-content: start;
+    align-items: center;
+}
+.top-bar__menu-text{
+    text-decoration: none;
+    font-family: var(--font_family_01);
+    font-size: var(--font__size_01);
+    color: var(--font__color_01); 
 }
 .top-bar__search{
-    width: 20vw;
+    width: 30vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 .top-bar__personal{
-    width: 20vw;
+    width: 15vw;
+}
+.top-bar__logo{
+    width: 3.05vw;
+    margin: 0 0 0 2.69vw;
+}
+.top-bar__search-background{
+    width: 28.740581270182993vw;
+    height: 5.322415557830092vh;
+    background-color: #F0F0F0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.75vw 0 0.75vw;
+    justify-content: space-between;
+    align-items: center;
 }
