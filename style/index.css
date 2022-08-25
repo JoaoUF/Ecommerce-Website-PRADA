@@ -2,19 +2,27 @@
     font-family: Libre Baskerville;
     src: url(../fonts/LibreBaskerville-Regular.otf);
 }
+@font-face {
+    font-family: Rocket;
+    src: url(../fonts/ROCKET\ WILDNESS.otf);
+}
 :root{
     /* FONT-FAMILIES */ 
     --font_family_01: Libre Baskerville;
+    --font_family_02: Rocket;
     
     /* FONT-SIZE */
-    --font__size_01: clamp(0.9rem, 1.125rem, 1.25rem);
-
+    --font__size_01: clamp(0.5rem, 1.125rem, 1.25rem);
+    --font__size_02: clamp(2rem, 3rem, 4rem);
+    
     /* FONT-COLOR */
     --font__color_01: #272727;
+    --font__color_02: #848484;
+    --font__color_03: #565656;
+    
 }
-body{
-    background-color: gray;
-}
+
+/* TOP-BAR */
 .top-bar{
     width: 100vw;
     height: 8.20vh;
@@ -46,20 +54,25 @@ body{
     color: var(--font__color_01); 
 }
 .top-bar__search{
-    width: 30vw;
+    width: 25vw;
     display: flex;
     justify-content: start;
     align-items: center;
 }
 .top-bar__personal{
-    width: 15vw;
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 .top-bar__logo{
     width: 3.05vw;
+    min-width: 1.5vw;
     margin: 0 0 0 2.69vw;
 }
 .top-bar__search-background{
-    width: 28.740581270182993vw;
+    width: 23vw;
     height: 5.322415557830092vh;
     background-color: #F0F0F0;
     border-radius: 8px;
@@ -68,4 +81,85 @@ body{
     padding: 0 0.75vw 0 0.75vw;
     justify-content: space-between;
     align-items: center;
+}
+.top-bar__search-img{
+    width: 1.29vw;
+}
+.top-bar__search-input{
+    width: 25vw;
+    padding: 0.5vw;
+    background-color: transparent;
+    border: none;
+    font-family: var(--font_family_01);
+    font-size: var(--font__size_01);
+    color: var(--font__color_02);
+}
+.top-bar__person{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+    align-items: center;
+    font-family: var(--font_family_01);
+    font-size: var(--font__size_01);
+    color: var(--font__color_02);
+}
+.top-bar__love{
+    width: 1.29vw;
+}
+.top-bar__shopping-car{
+    width: 1.29vw;
+}
+.top-bar__person-image{
+    height: 5.322415557830092vh;
+}
+
+/* SWIPER */
+.swiper{
+    display: flex;
+    width: 100vw;
+    height: 91.8vh;
+}
+.swiper__img{
+    width: 55vw;
+    height: auto;
+}
+.swiper__content{
+    width: 45vw;
+    height: auto;
+}
+.swiper__img{
+    margin: 0%;
+}
+.swiper__img-content{
+    width: 55vw;
+    height: 90.8vh;
+    object-fit: cover;
+}
+.swiper__content-back{
+    position: absolute;
+    width: 45Vw;
+    height: 90.8vh;
+    object-fit: cover;
+}
+.swiper__content-inside{
+    width: 45vw;
+    height: 90.8vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.swiper__content-title{
+    margin: 0%;
+    color: black;
+    font-family: var(--font_family_02);
+    font-size: 8.5rem;
+}
+.swiper__content-text{
+    margin: 0%;
+    font-family: var(--font_family_01);
+    font-size: var(--font__size_02);
+    color: var(--font__color_03);
 }
