@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Libre Baskerville;
+font-family: Libre Baskerville;
     src: url(../fonts/LibreBaskerville-Regular.otf);
 }
 @font-face {
@@ -173,7 +173,7 @@
     margin: 3rem 1rem;
 }
 .trending__container{
-    width: 97vw;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
 }
@@ -255,4 +255,107 @@
 }
 .trending__firstrow-star{
     height: 1.1vh;
+}
+
+/* DEAL OF THE DAY */
+.dealsoftheday{
+    width: 100vw;
+    margin: 3rem 1rem;
+}
+.dealsoftheday__title{
+    font-size: var(--font__size_03);
+    font-family: var(--font_family_01);
+    color: var(--font__color_01);
+    margin: 1.5rem 0rem;
+}
+.dealsofttheday__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.dealsoftheday__box{
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dealsoftheday__img-header{
+    width: 26vw;
+    height: 31vh;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+}
+.dealsoftheday__img-brand{
+    width: 8.12vw;
+    margin: 1rem 0rem;
+}
+.dealsoftheday__name-deal{
+    font-size: var(--font__size_03);
+    font-family: var(--font_family_01);
+    color: var(--font__color_01);
+    margin: 0.5rem 0rem;
+}
+.dealsoftheday__price{
+    font-size: var(--font__size_04);
+    font-family: var(--font_family_01);
+    color: var(--font__color_01);
+    margin: 0.5rem 0rem;
+}
+
+/* TRENDING OFFERS */
+.trendingoffers{
+    width: 100vw;
+    margin: 3rem 1rem;
+}
+.trendingoffers__title{
+    font-size: var(--font__size_03);
+    font-family: var(--font_family_01);
+    color: var(--font__color_01);
+    margin: 1.5rem 0rem;
+}
+.trendingoffers__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.trendingoffers__box{
+    width: 62vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 10px 10px;
+}
+.trendingoffers__box-text{
+    background-color: transparent;
+    width: 31vw;
+    height: 60;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.trendingoffers__box-brand{
+    width: 9.41vw;
+    margin: 1rem 0rem;
+}
+.trendingoffers__box-but{
+    font-size: var(--font__size_01);
+    font-family: var(--font_family_01);
+    color: var(--font__color_01);
+    margin: 0.5rem 0rem;
+    padding: 0.5rem 2rem;
+    line-height: 1.5rem;
+    background-color: transparent;
+    border: solid var(--font__color_01);
+    border-width: 1px;
+    border-radius: 10px;
+}
+.trendingoffers__box-img{
+    width: 31vw;
+    height: 60;
+    border-radius: 0px 10px 10px 0px;
+    object-fit: cover;
 }
